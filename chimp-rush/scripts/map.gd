@@ -9,7 +9,7 @@ func game_new() -> void:
 	$BirdTimer1.start()
 
 func game_over() -> void:
-	get_tree().reload_current_scene()
+	get_tree().reload_current_scene.call_deferred( )
 
 #score e banana
 @onready var meter_num: Label = $HUD/MeterNum
@@ -24,7 +24,7 @@ var last_ban: int = 0
 func coleta_bananas() -> void:
 	bananas += 1
 	last_ban=bananas
-	banana_num.text= "[color=baba00] 0[/color] [img width=38]res://assets/text/banana chibi.png[/img]" %bananas
+	banana_num.text= "[color=baba00] %d[/color] [img width=38]res://assets/text/banana chibi.png[/img]" %bananas
 	
 func _on_distance_timer_timeout() -> void:
 	meter+=1

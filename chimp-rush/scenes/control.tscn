@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cufi4ddn1f346" path="res://scripts/control.gd" id="1_btyrf"]
 [ext_resource type="FontFile" uid="uid://dpofv7810n38x" path="res://assets/text/Bananasplit-oMpz.ttf" id="1_sjmnu"]
 [ext_resource type="Texture2D" uid="uid://cwlfiha28ifym" path="res://assets/images/menu/game_over_board.png" id="2_cgmvo"]
-[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/Styles/button_theme.tres" id="4_wpaqk"]
+[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/styles/button_theme.tres" id="4_wpaqk"]
 [ext_resource type="FontFile" uid="uid://fw2oighmk6ne" path="res://assets/text/angrybirds-regular.ttf" id="5_3lwha"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_cgmvo"]

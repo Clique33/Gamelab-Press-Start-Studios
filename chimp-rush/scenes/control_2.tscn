@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://v02e7rkc6llf"]
 
 [ext_resource type="FontFile" uid="uid://dpofv7810n38x" path="res://assets/text/Bananasplit-oMpz.ttf" id="1_62e2m"]
-[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/Styles/button_theme.tres" id="1_qtu10"]
+[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/styles/button_theme.tres" id="1_qtu10"]
 [ext_resource type="Texture2D" uid="uid://b4rf1yatxb5wx" path="res://assets/images/menu/0f9948c4d2cabcfca0c5c88ccd0c8977.jpg" id="2_ee4bf"]
 [ext_resource type="Script" uid="uid://ctmtfyp5vvx0e" path="res://scripts/control_2.gd" id="2_ewh04"]
 [ext_resource type="FontFile" uid="uid://fw2oighmk6ne" path="res://assets/text/angrybirds-regular.ttf" id="5_ctfka"]
