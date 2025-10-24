@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://cnid0bchrn4vl"]
 
-[ext_resource type="Script" uid="uid://c8ej3jaggndil" path="res://assets/scripts/monkey.gd" id="1_xk1fp"]
+[ext_resource type="Script" uid="uid://c8ej3jaggndil" path="res://scripts/monkey.gd" id="1_xk1fp"]
 [ext_resource type="Texture2D" uid="uid://duu8x1xr0fwkf" path="res://assets/images/monkey/Camada 57.png" id="3_2ferh"]
 [ext_resource type="Texture2D" uid="uid://2vyobrrku65w" path="res://assets/images/monkey/animation 2/Camada 58.png" id="4_38nfq"]
 [ext_resource type="Texture2D" uid="uid://bvo1mofw1n5hb" path="res://assets/images/monkey/animation 2/Camada 59.png" id="5_e8uo2"]
@@ -22,7 +22,6 @@ radius = 27.0
 height = 96.0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sxsid"]
-load_path = "res://.godot/imported/Camada 17.png-60d00390f10e82975545c3832625d3fb.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1s1de"]
 atlas = ExtResource("19_8fkl4")

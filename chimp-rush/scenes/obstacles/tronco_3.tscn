@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dg616xu7ah88w"]
 
-[ext_resource type="Script" uid="uid://bhppujlby20dg" path="res://assets/scripts/block.gd" id="1_28nd5"]
+[ext_resource type="Script" uid="uid://bhppujlby20dg" path="res://scripts/block.gd" id="1_28nd5"]
 [ext_resource type="Texture2D" uid="uid://c1pkgaudo0hhi" path="res://assets/images/obstacles/tronco3.png" id="2_28nd5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dk6g4"]

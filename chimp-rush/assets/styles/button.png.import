@@ -2,24 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwnnavvs58wux"
-path="res://.godot/imported/button_pressed.png-bc357079cb1092ace6c3771c80d46073.ctex"
+uid="uid://momkt1foa7gx"
+path="res://.godot/imported/button.png-3f03e21aedf275912809d5b1d485c8cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/scenes/Styles/button_pressed.png"
-dest_files=["res://.godot/imported/button_pressed.png-bc357079cb1092ace6c3771c80d46073.ctex"]
+source_file="res://assets/styles/button.png"
+dest_files=["res://.godot/imported/button.png-3f03e21aedf275912809d5b1d485c8cb.ctex"]
 
 [params]
 
 compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
-compress/uastc_level=0
-compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -27,10 +25,6 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/channel_remap/red=0
-process/channel_remap/green=1
-process/channel_remap/blue=2
-process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

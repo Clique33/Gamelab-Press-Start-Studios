@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://4p2e8nmlksd8"]
 
-[ext_resource type="Script" uid="uid://d1efameb3hayy" path="res://assets/scripts/banana.gd" id="1_ik4w8"]
+[ext_resource type="Script" uid="uid://d1efameb3hayy" path="res://scripts/banana.gd" id="1_ik4w8"]
 [ext_resource type="Texture2D" uid="uid://bbcn445xl5j" path="res://assets/images/obstacles/banana.png" id="2_ik4w8"]
 [ext_resource type="Texture2D" uid="uid://bhp0nqa81cpt8" path="res://assets/images/obstacles/banana_animation.png" id="3_ik4w8"]
 

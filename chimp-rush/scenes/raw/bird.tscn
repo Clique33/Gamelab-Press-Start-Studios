@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://cqhqynle1t4e0"]
 
-[ext_resource type="Script" uid="uid://8rjwxwko20gv" path="res://assets/scripts/bird.gd" id="1_lxk2v"]
+[ext_resource type="Script" uid="uid://8rjwxwko20gv" path="res://scripts/bird.gd" id="1_lxk2v"]
 [ext_resource type="Texture2D" uid="uid://by5s11s4221np" path="res://assets/images/obstacles/ovo quebra.png" id="3_ol0cg"]
 [ext_resource type="Texture2D" uid="uid://0xq6r05gkqet" path="res://assets/images/obstacles/ovo.png" id="4_ol0cg"]
 [ext_resource type="Texture2D" uid="uid://cii8hx1woxyha" path="res://assets/images/obstacles/passaro.png" id="4_tyox4"]
