@@ -1,15 +1,15 @@
 [gd_scene load_steps=8 format=3 uid="uid://v02e7rkc6llf"]
 
 [ext_resource type="FontFile" uid="uid://dpofv7810n38x" path="res://assets/text/Bananasplit-oMpz.ttf" id="1_62e2m"]
-[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/Styles/button_theme.tres" id="1_qtu10"]
+[ext_resource type="Theme" uid="uid://oljpvewbcklr" path="res://assets/styles/button_theme.tres" id="1_qtu10"]
 [ext_resource type="Texture2D" uid="uid://b4rf1yatxb5wx" path="res://assets/images/menu/0f9948c4d2cabcfca0c5c88ccd0c8977.jpg" id="2_ee4bf"]
-[ext_resource type="Script" uid="uid://ctmtfyp5vvx0e" path="res://assets/scripts/control_2.gd" id="2_ewh04"]
+[ext_resource type="Script" uid="uid://ctmtfyp5vvx0e" path="res://scripts/control_2.gd" id="2_ewh04"]
 [ext_resource type="FontFile" uid="uid://fw2oighmk6ne" path="res://assets/text/angrybirds-regular.ttf" id="5_ctfka"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_62e2m"]
 font = ExtResource("1_62e2m")
 font_size = 150
-font_color = Color(0.8235294, 0.6745098, 0, 1)
+font_color = Color(0.823529, 0.67451, 0, 1)
 outline_size = 12
 outline_color = Color(0, 0, 0, 1)
 
@@ -26,8 +26,8 @@ theme = ExtResource("1_qtu10")
 script = ExtResource("2_ewh04")
 
 [node name="0f9948c4d2Cabcfca0c5c88Ccd0c8977" type="Sprite2D" parent="."]
-position = Vector2(576, 323.99997)
-scale = Vector2(0.7524494, 0.6612245)
+position = Vector2(576, 324)
+scale = Vector2(0.752449, 0.661224)
 texture = ExtResource("2_ee4bf")
 
 [node name="Label" type="Label" parent="."]

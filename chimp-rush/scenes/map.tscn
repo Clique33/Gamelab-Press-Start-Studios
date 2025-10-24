@@ -1,21 +1,21 @@
 [gd_scene load_steps=21 format=4 uid="uid://de35qwj734c6j"]
 
-[ext_resource type="Script" uid="uid://6gr8c31saltb" path="res://assets/scripts/map.gd" id="1_07t7k"]
+[ext_resource type="Script" uid="uid://6gr8c31saltb" path="res://scripts/map.gd" id="1_07t7k"]
 [ext_resource type="Texture2D" uid="uid://bf6f6yh1j67hr" path="res://assets/images/carro policia.png" id="1_bnucp"]
-[ext_resource type="PackedScene" uid="uid://cnid0bchrn4vl" path="res://assets/scenes/monkey.tscn" id="2_fyu4c"]
-[ext_resource type="PackedScene" uid="uid://cj64qbvuyempj" path="res://assets/scenes/obstacles/linha_bananas.tscn" id="3_fyu4c"]
-[ext_resource type="PackedScene" uid="uid://jtdmqia8ha2r" path="res://assets/scenes/obstacles/tronco_2.tscn" id="4_jroha"]
-[ext_resource type="PackedScene" uid="uid://dg616xu7ah88w" path="res://assets/scenes/obstacles/tronco_3.tscn" id="5_lphgc"]
-[ext_resource type="PackedScene" uid="uid://dvyxvuy3r8v1j" path="res://assets/scenes/obstacles/tronco_1.tscn" id="5_tir77"]
-[ext_resource type="PackedScene" uid="uid://bmpe35dmlljjs" path="res://assets/scenes/obstacles/tronco_3_linha_back.tscn" id="6_g2dpn"]
-[ext_resource type="PackedScene" uid="uid://jyb40yi8r313" path="res://assets/scenes/obstacles/tronco_2_linha_back.tscn" id="6_jry1f"]
-[ext_resource type="PackedScene" uid="uid://7agykvbmpxrf" path="res://assets/scenes/obstacles/tronco_1_linha_front.tscn" id="8_m5sv8"]
-[ext_resource type="Script" uid="uid://7owbgvijdj5g" path="res://assets/scripts/distance_timer.gd" id="11_1vs06"]
+[ext_resource type="PackedScene" uid="uid://cnid0bchrn4vl" path="res://scenes/monkey.tscn" id="2_fyu4c"]
+[ext_resource type="PackedScene" uid="uid://cj64qbvuyempj" path="res://scenes/obstacles/linha_bananas.tscn" id="3_fyu4c"]
+[ext_resource type="PackedScene" uid="uid://jtdmqia8ha2r" path="res://scenes/obstacles/tronco_2.tscn" id="4_jroha"]
+[ext_resource type="PackedScene" uid="uid://dg616xu7ah88w" path="res://scenes/obstacles/tronco_3.tscn" id="5_lphgc"]
+[ext_resource type="PackedScene" uid="uid://dvyxvuy3r8v1j" path="res://scenes/obstacles/tronco_1.tscn" id="5_tir77"]
+[ext_resource type="PackedScene" uid="uid://bmpe35dmlljjs" path="res://scenes/obstacles/tronco_3_linha_back.tscn" id="6_g2dpn"]
+[ext_resource type="PackedScene" uid="uid://jyb40yi8r313" path="res://scenes/obstacles/tronco_2_linha_back.tscn" id="6_jry1f"]
+[ext_resource type="PackedScene" uid="uid://7agykvbmpxrf" path="res://scenes/obstacles/tronco_1_linha_front.tscn" id="8_m5sv8"]
+[ext_resource type="Script" uid="uid://7owbgvijdj5g" path="res://scripts/distance_timer.gd" id="11_1vs06"]
 [ext_resource type="Texture2D" uid="uid://cs8y7s7qc8air" path="res://assets/images/background/background.png" id="11_468dr"]
 [ext_resource type="Texture2D" uid="uid://2v3sqa66ajy3" path="res://assets/images/background/background_up.png" id="12_2ta6w"]
-[ext_resource type="PackedScene" uid="uid://cqhqynle1t4e0" path="res://assets/scenes/raw/bird.tscn" id="12_ofj3e"]
+[ext_resource type="PackedScene" uid="uid://cqhqynle1t4e0" path="res://scenes/raw/bird.tscn" id="12_ofj3e"]
 [ext_resource type="Texture2D" uid="uid://4a0dcpfjtyne" path="res://assets/images/background/background_down.png" id="13_2ta6w"]
-[ext_resource type="Script" uid="uid://b8utx7ltma4gc" path="res://assets/scripts/parallax_background.gd" id="13_hbrwi"]
+[ext_resource type="Script" uid="uid://b8utx7ltma4gc" path="res://scripts/parallax_background.gd" id="13_hbrwi"]
 [ext_resource type="FontFile" uid="uid://fw2oighmk6ne" path="res://assets/text/angrybirds-regular.ttf" id="16_w6pjj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_45j4w"]
@@ -234,7 +234,7 @@ sources/0 = SubResource("TileSetAtlasSource_45j4w")
 [sub_resource type="LabelSettings" id="LabelSettings_07t7k"]
 font = ExtResource("16_w6pjj")
 font_size = 40
-font_color = Color(0.7294118, 0.7294118, 0, 1)
+font_color = Color(0.729412, 0.729412, 0, 1)
 outline_size = 14
 outline_color = Color(0, 0, 0, 1)
 
@@ -255,7 +255,6 @@ motion_mirroring = Vector2(1152, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/background"]
 texture_repeat = 2
 position = Vector2(576, 324)
-scale = Vector2(1, 1.0000001)
 texture = ExtResource("11_468dr")
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
@@ -272,17 +271,17 @@ motion_mirroring = Vector2(1152, 0)
 z_index = 3
 z_as_relative = false
 texture_repeat = 2
-position = Vector2(583.95306, 233)
-scale = Vector2(1.0122342, 0.854512)
+position = Vector2(583.953, 233)
+scale = Vector2(1.01223, 0.854512)
 texture = ExtResource("12_2ta6w")
 
 [node name="chao" type="ParallaxLayer" parent="ParallaxBackground2"]
-position = Vector2(-6.1035156e-05, 0)
+position = Vector2(-6.10352e-05, 0)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/chao"]
 position = Vector2(578, 626)
-scale = Vector2(1, 0.7346941)
+scale = Vector2(1, 0.734694)
 texture = ExtResource("13_2ta6w")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -313,7 +312,7 @@ offset_left = 4.0
 offset_top = 69.0
 offset_right = 162.0
 offset_bottom = 117.0
-theme_override_colors/default_color = Color(0.7294118, 0.7294118, 0, 1)
+theme_override_colors/default_color = Color(0.729412, 0.729412, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 14
 theme_override_fonts/normal_font = ExtResource("16_w6pjj")

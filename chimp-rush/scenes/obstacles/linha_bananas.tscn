@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cj64qbvuyempj"]
 
-[ext_resource type="Script" uid="uid://cx6bralfxkts3" path="res://assets/scenes/obstacles/redirect.gd" id="1_o34d2"]
-[ext_resource type="PackedScene" uid="uid://4p2e8nmlksd8" path="res://assets/scenes/raw/banana.tscn" id="1_oar36"]
+[ext_resource type="Script" uid="uid://cx6bralfxkts3" path="res://scenes/obstacles/redirect.gd" id="1_o34d2"]
+[ext_resource type="PackedScene" uid="uid://4p2e8nmlksd8" path="res://scenes/raw/banana.tscn" id="1_oar36"]
 
 [node name="Linha_bananas" type="Node2D"]
 visibility_layer = 4
