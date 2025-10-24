@@ -8,7 +8,7 @@ var alternate: bool=true
 var ground: bool=false
 
 func _ready() -> void:
-	if Input.is_action_pressed("ui_accept"):
+	if Input.is_action_pressed("go_up"):
 		$animated.position+=Vector2(0,-200)          
 		$animated.play("jumping_1")
 	else: 
@@ -33,13 +33,13 @@ func _physics_process(delta: float) -> void:
 			
 			ground=true
 	#Jump system.
-	if Input.is_action_just_released("ui_accept"):
+	if Input.is_action_just_released("go_up"):
 		if $animated.get_animation()!="transition_3":
 			$animated.position+=Vector2(0,200)
 		$animated.play("idle_air")
 		jumping=0
 	else:
-		if Input.is_action_just_pressed("ui_accept"):
+		if Input.is_action_just_pressed("go_up"):
 			if alternate==true: 
 				alternate=false
 				$animated.position+=Vector2(0,-200)
@@ -48,7 +48,7 @@ func _physics_process(delta: float) -> void:
 				alternate=true
 				$animated.position+=Vector2(0,-200)
 				$animated.play("jumping_1")
-		if Input.is_action_pressed("ui_accept"):
+		if Input.is_action_pressed("go_up"):
 			jumping-=3
 			velocity.y = jump + jumping
 
