@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://jyb40yi8r313"]
+
+[ext_resource type="PackedScene" uid="uid://jtdmqia8ha2r" path="res://assets/scenes/obstacles/tronco_2.tscn" id="1_6kcpo"]
+[ext_resource type="Script" uid="uid://cx6bralfxkts3" path="res://assets/scenes/obstacles/redirect.gd" id="1_nhv28"]
+[ext_resource type="PackedScene" uid="uid://4p2e8nmlksd8" path="res://assets/scenes/raw/banana.tscn" id="2_nhv28"]
+
+[node name="tronco_2_linha_back" type="Node2D"]
+visibility_layer = 4
+script = ExtResource("1_nhv28")
+
+[node name="tronco 2" parent="." instance=ExtResource("1_6kcpo")]
+
+[node name="banana" parent="." instance=ExtResource("2_nhv28")]
+position = Vector2(145, 0)
+
+[node name="banana2" parent="." instance=ExtResource("2_nhv28")]
+position = Vector2(255, 0)
+
+[node name="banana3" parent="." instance=ExtResource("2_nhv28")]
+position = Vector2(365, 0)
+
+[node name="banana4" parent="." instance=ExtResource("2_nhv28")]
+position = Vector2(475, 0)

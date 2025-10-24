@@ -1,0 +1,138 @@
+[gd_scene load_steps=23 format=3 uid="uid://cnid0bchrn4vl"]
+
+[ext_resource type="Script" uid="uid://c8ej3jaggndil" path="res://assets/scripts/monkey.gd" id="1_xk1fp"]
+[ext_resource type="Texture2D" uid="uid://uxvp12g6sm18" path="res://assets/images/monkey/Camada 17.png" id="2_xk1fp"]
+[ext_resource type="Texture2D" uid="uid://duu8x1xr0fwkf" path="res://assets/images/monkey/Camada 57.png" id="3_2ferh"]
+[ext_resource type="Texture2D" uid="uid://2vyobrrku65w" path="res://assets/images/monkey/animation 2/Camada 58.png" id="4_38nfq"]
+[ext_resource type="Texture2D" uid="uid://bvo1mofw1n5hb" path="res://assets/images/monkey/animation 2/Camada 59.png" id="5_e8uo2"]
+[ext_resource type="Texture2D" uid="uid://cv7wuhmf8h6iu" path="res://assets/images/monkey/animation 2/Camada 60.png" id="6_xgfmm"]
+[ext_resource type="Texture2D" uid="uid://dgsslahg0m1sr" path="res://assets/images/monkey/animation 2/Camada 61.png" id="7_cc2im"]
+[ext_resource type="Texture2D" uid="uid://bfqv6et7lu6ll" path="res://assets/images/monkey/animation 2/Camada 62.png" id="8_vx36t"]
+[ext_resource type="Texture2D" uid="uid://crometjw2p067" path="res://assets/images/monkey/animation 1/Camada 63.png" id="9_3mhnm"]
+[ext_resource type="Texture2D" uid="uid://c2nc7xhvtir10" path="res://assets/images/monkey/animation 1/Camada 51.png" id="10_b1qnh"]
+[ext_resource type="Texture2D" uid="uid://gnueknir2d8y" path="res://assets/images/monkey/animation 1/Camada 52.png" id="11_dmyn2"]
+[ext_resource type="Texture2D" uid="uid://cbrcmu2pc740j" path="res://assets/images/monkey/animation 1/Camada 53.png" id="12_adirk"]
+[ext_resource type="Texture2D" uid="uid://drfo255i0do3a" path="res://assets/images/monkey/animation 1/Camada 54.png" id="13_l4ix3"]
+[ext_resource type="Texture2D" uid="uid://djkitdu55rt45" path="res://assets/images/monkey/animation 1/Camada 55.png" id="14_8vxca"]
+[ext_resource type="Texture2D" uid="uid://b0qn1qfe0e2j6" path="res://assets/images/monkey/animation 1/Camada 56.png" id="15_pb52n"]
+[ext_resource type="Texture2D" uid="uid://b3mo8kwb2pr1e" path="res://assets/images/monkey/Camada 50 copiar.png" id="18_hplvi"]
+[ext_resource type="Texture2D" uid="uid://gm3ws4w1jamb" path="res://assets/images/monkey/Camada 47 copiar.png" id="19_8fkl4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xk1fp"]
+radius = 27.0
+height = 96.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1s1de"]
+atlas = ExtResource("19_8fkl4")
+region = Rect2(0, 0, 128, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_prh8o"]
+atlas = ExtResource("19_8fkl4")
+region = Rect2(128, 0, 128, 122)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vh0hd"]
+atlas = ExtResource("19_8fkl4")
+region = Rect2(256, 0, 128, 122)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_chgac"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_2ferh")
+}],
+"loop": true,
+"name": &"idle_air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_38nfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_e8uo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xgfmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cc2im")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_vx36t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3mhnm")
+}],
+"loop": false,
+"name": &"jumping_1",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_b1qnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dmyn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_adirk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_l4ix3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8vxca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pb52n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3mhnm")
+}],
+"loop": false,
+"name": &"jumping_2",
+"speed": 13.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_hplvi")
+}],
+"loop": false,
+"name": &"transition_3",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1s1de")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_prh8o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vh0hd")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 6.0
+}]
+
+[node name="Monkey" type="CharacterBody2D"]
+z_index = 1
+collision_mask = 14
+script = ExtResource("1_xk1fp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-58, -10)
+shape = SubResource("CapsuleShape2D_xk1fp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-44, -29)
+texture = ExtResource("2_xk1fp")
+
+[node name="animated" type="AnimatedSprite2D" parent="."]
+position = Vector2(-62, -28)
+sprite_frames = SubResource("SpriteFrames_chgac")
+animation = &"transition_3"
+
+[connection signal="animation_finished" from="animated" to="." method="_on_animated_animation_finished"]

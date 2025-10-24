@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg616xu7ah88w"]
+
+[ext_resource type="Script" uid="uid://bhppujlby20dg" path="res://assets/scripts/block.gd" id="1_28nd5"]
+[ext_resource type="Texture2D" uid="uid://c1pkgaudo0hhi" path="res://assets/images/obstacles/tronco3.png" id="2_28nd5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dk6g4"]
+size = Vector2(55.805725, 197.34164)
+
+[node name="tronco_3" type="Area2D"]
+light_mask = 4
+visibility_layer = 4
+script = ExtResource("1_28nd5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+rotation = -2.3911011
+shape = SubResource("RectangleShape2D_dk6g4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 17)
+scale = Vector2(0.5, 0.6)
+texture = ExtResource("2_28nd5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

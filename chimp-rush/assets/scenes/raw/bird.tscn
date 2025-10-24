@@ -1,0 +1,106 @@
+[gd_scene load_steps=9 format=3 uid="uid://cqhqynle1t4e0"]
+
+[ext_resource type="Script" uid="uid://8rjwxwko20gv" path="res://assets/scripts/bird.gd" id="1_lxk2v"]
+[ext_resource type="Texture2D" uid="uid://by5s11s4221np" path="res://assets/images/obstacles/ovo quebra.png" id="3_ol0cg"]
+[ext_resource type="Texture2D" uid="uid://0xq6r05gkqet" path="res://assets/images/obstacles/ovo.png" id="4_ol0cg"]
+[ext_resource type="Texture2D" uid="uid://cii8hx1woxyha" path="res://assets/images/obstacles/passaro.png" id="4_tyox4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4tf1"]
+size = Vector2(150, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tyox4"]
+atlas = ExtResource("4_ol0cg")
+region = Rect2(405, 0, 405, 507)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_we7qy"]
+atlas = ExtResource("4_ol0cg")
+region = Rect2(0, 0, 405, 507)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6a0rw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ol0cg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ol0cg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ol0cg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ol0cg")
+}],
+"loop": false,
+"name": &"danger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_tyox4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_we7qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_we7qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_we7qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_we7qy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tyox4")
+}],
+"loop": false,
+"name": &"pisca",
+"speed": 3.0
+}]
+
+[node name="bird" type="Area2D"]
+z_index = 1
+collision_layer = 4
+script = ExtResource("1_lxk2v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_i4tf1")
+
+[node name="charge" type="AnimatedSprite2D" parent="."]
+position = Vector2(-300, -29)
+scale = Vector2(0.13, 0.138)
+sprite_frames = SubResource("SpriteFrames_6a0rw")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="charge" to="." method="_on_animations_animation_finished"]
